@@ -18,7 +18,7 @@ CHANNELS = [
 
 QUESTIONS_FILE = "questions.txt"
 
-POLLS_PER_RUN = 300
+POLLS_PER_RUN = 150
 
 # =====================================================
 
@@ -32,8 +32,7 @@ INTRO = """📚🔥 <b>Daily NCERT & GS MCQ Quiz</b> 🔥📚
 """
 
 
-OUTRO = """#upsc #ssc #prelims #mains #upscmains UPSC SSC CDS CGL daily mcq quizzes and puzzles.
-admin - @upsctestse \n #uspc #ssc #cds upsc_Daily_mcq_practise_bot get all free quizzes and test series
+OUTRO = """#upsc #ssc #prelims #mains #upscmains UPSC SSC CDS CGL daily mcq quizzes and puzzles #uspc #ssc #cds upsc_Daily_mcq_practise_bot get all free quizzes and test series \n\nadmin - @upsctestse
 """
 
 
@@ -121,7 +120,7 @@ def main():
             if count%2==0:
                 send_message(channel, OUTRO)
             count+=1
-            time.sleep(120)
+            time.sleep(300)
     print("\n====================================")
     print(f"Posted {count} random questions.")
     print("Done!")
