@@ -24,7 +24,6 @@ POLLS_PER_RUN = 300
 
 
 INTRO = """📚🔥 <b>Daily NCERT & GS MCQ Quiz</b> 🔥📚
-
 🎯 Welcome to today's practice session!
 🏆 Perfect for aspirants preparing for <b>UPSC CSE, SSC, CDS, CAPF, State PSCs, Railways, Banking</b> and other competitive examinations.
 
@@ -33,15 +32,12 @@ INTRO = """📚🔥 <b>Daily NCERT & GS MCQ Quiz</b> 🔥📚
 """
 
 
-OUTRO = """📖━━━━━━━━📖
-
-🌟 <b>Remember...</b>
-
-These questions are carefully sourced from <b>NCERTs</b> and cover the fundamental concepts that form the <b>bedrock of UPSC Prelims</b> and many other competitive examinations.
-
-📚 Revise regularly.
-🧠 Learn from your mistakes.
-🚀 Stay consistent.
+OUTRO = """#upsc #ssc #prelims #mains #upscmains<br>
+UPSC SSC CDS CGL daily mcq quizzes and puzzles.
+admin - @upsclog
+#uspc #ssc #cds upsc_Daily_mcq_practise_bot
+get all free quizzes and test series
+@upsctestse 
 
 <b>Success isn't about studying more—it's about revising better.</b>
 
