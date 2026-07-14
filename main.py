@@ -32,8 +32,8 @@ INTRO = """📚🔥 <b>Daily NCERT & GS MCQ Quiz</b> 🔥📚
 """
 
 
-OUTRO = """#upsc #ssc #prelims #mains #upscmains UPSC SSC CDS CGL daily mcq quizzes and puzzles.</b>
-admin - @upsctestse </b>#uspc #ssc #cds upsc_Daily_mcq_practise_bot get all free quizzes and test series
+OUTRO = """#upsc #ssc #prelims #mains #upscmains UPSC SSC CDS CGL daily mcq quizzes and puzzles.
+admin - @upsctestse \n #uspc #ssc #cds upsc_Daily_mcq_practise_bot get all free quizzes and test series
 """
 
 
@@ -110,7 +110,7 @@ def main():
         print(f"\nPosting to {channel}")
 
         send_message(channel, INTRO)
-        count = 0
+        count = 1
         for line in current_questions:
             try:
                 question = json.loads(line)
