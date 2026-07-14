@@ -121,7 +121,7 @@ def main():
             except Exception as e:
                 print("Invalid JSON:")
                 print(e)
-            if count%5==0:
+            if count%2==0:
                 send_message(channel, OUTRO)
             count+=1
             time.sleep(120)
