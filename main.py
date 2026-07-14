@@ -32,11 +32,8 @@ INTRO = """📚🔥 <b>Daily NCERT & GS MCQ Quiz</b> 🔥📚
 """
 
 
-OUTRO = """#upsc #ssc #prelims #mains #upscmains<br>
-UPSC SSC CDS CGL daily mcq quizzes and puzzles.
-admin - @upsctestse
-#uspc #ssc #cds upsc_Daily_mcq_practise_bot
-get all free quizzes and test series
+OUTRO = """#upsc #ssc #prelims #mains #upscmains UPSC SSC CDS CGL daily mcq quizzes and puzzles.</b>
+admin - @upsctestse </b>#uspc #ssc #cds upsc_Daily_mcq_practise_bot get all free quizzes and test series
 """
 
 
