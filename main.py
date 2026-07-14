@@ -13,7 +13,8 @@ import os
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 
 CHANNELS = [
-    "@upsc_daily_pyq"
+    "@upsc_daily_pyq",
+    "@upscgroupch"
 ]
 
 QUESTIONS_FILE = "questions.txt"
@@ -120,7 +121,7 @@ def main():
             if count%2==0:
                 send_message(channel, OUTRO)
             count+=1
-            time.sleep(300)
+            time.sleep(900)
     print("\n====================================")
     print(f"Posted {count} random questions.")
     print("Done!")
