@@ -1,32 +1,32 @@
-  # name: Telegram MCQ Bot
+  name: Telegram MCQ Bot
   
-  # on:
-  #   workflow_dispatch:
+  on:
+    workflow_dispatch:
   
-  #   schedule:
-  #     # Every day at 12:50 PM IST
-  #     - cron: "20 7 * * *"
+    schedule:
+      # Every day at 12:50 PM IST
+      - cron: "20 7 * * *"
   
-  # jobs:
-  #   post-mcqs:
-  #     runs-on: ubuntu-latest
+  jobs:
+    post-mcqs:
+      runs-on: ubuntu-latest
   
-  #     steps:
-  #       - name: Checkout Repository
-  #         uses: actions/checkout@v4
+      steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4
   
-  #       - name: Set up Python
-  #         uses: actions/setup-python@v5
-  #         with:
-  #           python-version: "3.12"
+        - name: Set up Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: "3.12"
   
-  #       - name: Install dependencies
-  #         run: |
-  #           python -m pip install --upgrade pip
-  #           pip install requests
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install requests
   
-  #       - name: Run Telegram Bot
-  #         env:
-  #           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-  #         run: |
-  #           python telegram_poll_rotator.py
+        - name: Run Telegram Bot
+          env:
+            BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          run: |
+            python telegram_poll_rotator.py
