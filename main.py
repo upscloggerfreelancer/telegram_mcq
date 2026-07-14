@@ -122,7 +122,7 @@ def main():
         print(f"\nPosting to {channel}")
 
         send_message(channel, INTRO)
-
+        count = 0
         for line in current_questions:
             try:
                 question = json.loads(line)
@@ -130,9 +130,10 @@ def main():
             except Exception as e:
                 print("Invalid JSON:")
                 print(e)
-
-        send_message(channel, OUTRO)
-        time.sleep(120)
+            if count%5==0:
+                send_message(channel, OUTRO)
+            count+=1
+            time.sleep(120)
     print("\n====================================")
     print(f"Posted {count} random questions.")
     print("Done!")
