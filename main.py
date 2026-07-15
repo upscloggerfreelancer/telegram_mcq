@@ -14,12 +14,13 @@ BOT_TOKEN = os.environ["BOT_TOKEN"]
 
 CHANNELS = [
     "@upsc_daily_pyq",
+    "@upsc_mains_answer_writing_groupp",
     "@upscgroupch"
 ]
 
 QUESTIONS_FILE = "questions.txt"
 
-POLLS_PER_RUN = 1000
+POLLS_PER_RUN = 8
 
 # =====================================================
 
@@ -121,7 +122,7 @@ def main():
             except Exception as e:
                 print("Invalid JSON:")
                 print(e)
-            if count%2==0:
+            if count%4==0:
                 send_message(CHANNELS[0], OUTRO)
                 send_message(CHANNELS[1], OUTRO)
                 
