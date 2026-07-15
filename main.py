@@ -107,7 +107,7 @@ def main():
     # Post to every channel
     for i in range(1):
 
-        print(f"\nPosting to {channel}")
+        print(f"\nPosting to Channels")
 
         send_message(CHANNELS[0], INTRO)
         time.sleep(2)
