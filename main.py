@@ -19,7 +19,7 @@ CHANNELS = [
 
 QUESTIONS_FILE = "questions.txt"
 
-POLLS_PER_RUN = 150
+POLLS_PER_RUN = 60
 
 # =====================================================
 
@@ -105,23 +105,27 @@ def main():
     current_questions = random.sample(lines, count)
 
     # Post to every channel
-    for channel in CHANNELS:
+    for i in range(1):
 
         print(f"\nPosting to {channel}")
 
-        send_message(channel, INTRO)
+        send_message(CHANNELS[0], INTRO)
+        time.sleep(2)
+        send_message(CHANNELS[1], INTRO)
         count = 1
         for line in current_questions:
             try:
                 question = json.loads(line)
-                send_poll(channel, question)
+                send_poll(CHANNELS[0], question)
+                send_poll(CHANNELS[1], question)
             except Exception as e:
                 print("Invalid JSON:")
                 print(e)
             if count%2==0:
-                send_message(channel, OUTRO)
+                send_poll(CHANNELS[0], question)
+                send_poll(CHANNELS[1], question)
             count+=1
-            time.sleep(900)
+            time.sleep(10)
     print("\n====================================")
     print(f"Posted {count} random questions.")
     print("Done!")
