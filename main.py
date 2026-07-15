@@ -19,7 +19,7 @@ CHANNELS = [
 
 QUESTIONS_FILE = "questions.txt"
 
-POLLS_PER_RUN = 60
+POLLS_PER_RUN = 50
 
 # =====================================================
 
@@ -126,7 +126,7 @@ def main():
                 send_message(CHANNELS[1], OUTRO)
                 
             count+=1
-            time.sleep(10)
+            time.sleep(900)
     print("\n====================================")
     print(f"Posted {count} random questions.")
     print("Done!")
