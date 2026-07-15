@@ -122,8 +122,9 @@ def main():
                 print("Invalid JSON:")
                 print(e)
             if count%2==0:
-                send_poll(CHANNELS[0], OUTRO)
-                send_poll(CHANNELS[1], OUTRO)
+                send_message(CHANNELS[0], OUTRO)
+                send_message(CHANNELS[1], OUTRO)
+                
             count+=1
             time.sleep(10)
     print("\n====================================")
