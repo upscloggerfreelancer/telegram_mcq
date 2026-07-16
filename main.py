@@ -15,7 +15,8 @@ BOT_TOKEN = os.environ["BOT_TOKEN"]
 CHANNELS = [
     "@upsc_daily_pyq",
     "@upsc_mains_answer_writing_groupp",
-    "@upscgroupch"
+    "@upscgroupch",
+    "@upsclog"
 ]
 
 QUESTIONS_FILE = "questions.txt"
