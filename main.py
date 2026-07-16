@@ -113,18 +113,22 @@ def main():
         send_message(CHANNELS[0], INTRO)
         time.sleep(2)
         send_message(CHANNELS[1], INTRO)
+        time.sleep(2)
+        send_message(CHANNELS[2], INTRO)
         count = 1
         for line in current_questions:
             try:
                 question = json.loads(line)
                 send_poll(CHANNELS[0], question)
                 send_poll(CHANNELS[1], question)
+                send_poll(CHANNELS[2], question)
             except Exception as e:
                 print("Invalid JSON:")
                 print(e)
             if count%4==0:
                 send_message(CHANNELS[0], OUTRO)
                 send_message(CHANNELS[1], OUTRO)
+                send_message(CHANNELS[2], OUTRO)
                 
             count+=1
             time.sleep(2)
