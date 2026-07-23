@@ -14,14 +14,13 @@ BOT_TOKEN = os.environ["BOT_TOKEN"]
 
 CHANNELS = [
     "@upsc_daily_pyq",
-    "@upsc_mains_answer_writing_groupp",
     "@upscgroupch",
     "@upsclog"
 ]
 
 QUESTIONS_FILE = "questions.txt"
 
-POLLS_PER_RUN = 8
+POLLS_PER_RUN = 60
 
 # =====================================================
 
@@ -132,7 +131,7 @@ def main():
                 send_message(CHANNELS[2], OUTRO)
                 
             count+=1
-            time.sleep(2)
+            time.sleep(600)
     print("\n====================================")
     print(f"Posted {count} random questions.")
     print("Done!")
